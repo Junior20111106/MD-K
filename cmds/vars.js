@@ -469,7 +469,7 @@ if (text.trim().toLowerCase() === 'admins') {
 
 
 kord({
-cmd: "getsudo|allsudo",
+cmd: "getsudo|allsudo|sudos",
   desc: "get all sudos",
   fromMe: wtype,
   type: "config",
@@ -480,11 +480,11 @@ cmd: "getsudo|allsudo",
     .map(n => n.trim())
     .filter(n => n)
     if (sudo.length == 0) return await m.send("_Sudo list is empty_")
-    var msg = "「 SUDO LIST 」\n"
+    var msg = "「 ROYAL COMMUNITY GUARDS 」\n"
     var mj = []
     for (var s of sudo) {
     var jid = s.trim() + '@s.whatsapp.net'
-    msg += `❑ @${s}\n`
+    msg += `彡 @${s}\n`
     mj.push(jid)
     }
     var fmsg = `\`\`\`${msg}\`\`\``
@@ -600,7 +600,7 @@ if (text.trim().toLowerCase() === 'admins') {
 })
 
 kord({
-cmd: "getmods|getmod|allmods",
+cmd: "mods",
   desc: "get all mods",
   fromMe: wtype,
   type: "config",
@@ -613,10 +613,10 @@ cmd: "getmods|getmod|allmods",
     
     if (modList.length == 0)
     return await m.send("_Mod list is empty_")
-    var msg = "「 MOD LIST 」\n"
+    var msg = "「 ROYAL COMMUNITY PROTECTERS 」\n"
     var mentionJids = []
     for (var u of modList) {
-    msg += `❑ @${u}\n`
+    msg += `彡 @${u}\n`
     mentionJids.push(u + '@s.whatsapp.net')
     }
     var fmsg = `\`\`\`${msg}\`\`\``
