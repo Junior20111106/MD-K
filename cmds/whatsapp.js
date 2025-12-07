@@ -541,7 +541,7 @@ kord({
 })
 
 kord({
-  cmd: "mute-user",
+  cmd: "mute",
   desc: "mute a user or a sticker",
   fromMe: true,
   type: "bot",
@@ -577,7 +577,7 @@ kord({
 
 
 kord({
-  cmd: "unmute-user",
+  cmd: "unmute",
   desc: "unmute a user or sticker",
   fromMe: true,
   type: "bot",
