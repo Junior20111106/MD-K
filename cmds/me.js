@@ -546,16 +546,16 @@ END:VCARD`
 })
 
 kord({
-cmd: "repo|sc|script",
+cmd: "community|alpha|support",
   desc: "send repository link of the bot",
   fromMe: wtype,
   type: "bot"
 }, async (m, text) => {
   try {
     const msg =
-    `╔═════《 My Repository 》═════╗
-╠ Link: https://github.com/M3264/Kord-Ai
-╠ Description: WhatsApp Bot built with Baileys
+    `╔═════《 *ANIME GENATION HIROS* 》═════╗
+ *Link: https:* //chat.whatsapp.com/Bjn3Zs0To5VH9H8D25dNTY?mode=hqrt1
+ *Description:* this community was made fore all the anime lovers like you and the boys lovers to
 ╚═════════════════════════════╝`
     
     return await m.send(msg)
