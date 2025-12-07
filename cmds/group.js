@@ -271,7 +271,7 @@ cmd: "demote",
 })
 
 kord({
-cmd: "mute",
+cmd: "open",
   desc: "mute a group to allow only admins to send message",
   fromMe: wtype,
   gc: true,
@@ -290,7 +290,7 @@ cmd: "mute",
 })
 
 kord({
-cmd: "unmute",
+cmd: "close",
   desc: "unmute a group to allow all members to send message",
   fromMe: wtype,
   gc: true,
@@ -348,7 +348,7 @@ cmd: "revoke",
 })
 
 kord({
-  cmd: "tag",
+  cmd: "tag|tell|tell-everyone",
   desc: "tag all memebers/admins/me/text",
   fromMe: wtype,
   gc: true,
@@ -433,7 +433,7 @@ kord({
 
 
 kord({
-  cmd: "creategc",
+  cmd: "creategc|makegc",
   desc: "create a group",
   fromMe: true,
   type: "group",
@@ -2161,7 +2161,7 @@ const listOnlineOffline = async (m, text, store, mode, sock) => {
 }
 
 kord({
-  cmd: "listonline",
+  cmd: "listonline|active",
   desc: "List online users by interval",
   fromMe: wtype,
   type: "tools",
@@ -2170,7 +2170,7 @@ kord({
 }, async (m, text, c, store) => listOnlineOffline(m, text, store, "online", m.client))
 
 kord({
-  cmd: "listoffline",
+  cmd: "listoffline|unactive",
   desc: "List offline users by interval",
   fromMe: wtype,
   type: "tools",
